@@ -1,9 +1,9 @@
-Drug Mapper: maps bart 1 and bart 2 drugs using a simple web interface
-======================================================================
+OpenMRS Mapping: Automate your cross database mapping for varied OpenMRS data models 
+====================================================================================
 
 Introduction
 ------------
-Drug Mapper is an application that maps bart 1 and bart 2 drugs using a simple web interface.
+OpenMRS Mapping is an application that that does cross-database mapping for varied OpenMRS data models using a simple web interface.
 
 Getting Started
 ---------------
@@ -28,10 +28,11 @@ The application is ready for use (on http://localhost:3000/ by default).
 Source code
 -----------
 The latest code can be found at:
-    https://github.com/BaobabHealthTrust/mnch-hotline.
+    https://github.com/ceekays/OpenMRS-Mapping.
 
 Contact the Developers
 ----------------------
-
+    kachaleedmond(at)gmail.com (http://edceekays.blogspot.com/)
     developers(at)baobabhealth(dot)org (http://baobabhealth.org/)
+
 
