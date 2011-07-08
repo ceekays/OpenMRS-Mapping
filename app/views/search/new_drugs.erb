@@ -1,0 +1,4 @@
+<%@drugs.each do |drug|%>
+<li class="ui-widget-content"><%=drug.name%></li>
+<%end%>
+<%="</ol><span style='position:fixed; top:10px; right:10%; color:white; z-index:300'>#{@drugs.length} of #{NewDrug.find(:all).count.to_s} Results In bart2</span>"%>

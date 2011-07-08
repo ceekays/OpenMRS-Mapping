@@ -1,0 +1,24 @@
+production:
+  adapter: mysql
+  database: drug_map_production
+  username:
+  password:
+  host: localhost
+
+development:
+  adapter: mysql
+  database: drug_map_development
+  username:
+  password:
+  host: localhost
+
+test: &TEST
+  adapter: mysql
+  database: drug_map_test
+  username:
+  password:
+  host: localhost
+
+
+cucumber:
+  <<: *TEST

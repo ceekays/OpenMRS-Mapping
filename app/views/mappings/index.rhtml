@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>Drug Mapper</title>
+    <%= stylesheet_link_tag  "themes/base/jquery.ui.all.css" %>
+    <%= stylesheet_link_tag "demos.css" %>
+
+  </head>
+  <style>
+    body{
+      position:relative;
+      width:100%;
+      height:100%;
+      background-color: black;
+      font-size : 0.8em;
+    }
+
+    #body_div {
+      position: relative;
+      margin: 0px  auto;
+      display:block;
+      width: 80%;
+      height: 100%;
+    }
+
+    #title_div {
+      position : relative;
+      width:100%;
+      height: 100px;
+      background-color : #CCC;
+    }
+
+
+    #panel
+    {
+      height: 90%;
+      background-color:#CCC;
+      float : none;
+    }
+
+    .menu {
+     
+      width:90%;
+      height:95%;
+      /*border : 1px solid black*/
+      padding: 5px;
+    }
+
+    #feedback {
+      font-size: 1.4em;
+    }
+    #menu-item .ui-selecting, #selectable .ui-selecting {
+      background: #FECA40;
+    }
+    #menu-item .ui-selected, #selectable .ui-selected {
+      background: #F39814; color: white;
+    }
+    #menu-item, #selectable {
+      list-style-type: none; margin: 0; padding: 0; width: 60%;
+    }
+    #selectable li {
+      margin: 3px;
+      padding: 0.4em;
+      font-size: 0.9em;
+      height: 18px;
+    }
+
+    #menu-item a{
+      
+      padding: 0.4em;
+      text-decoration:none;
+      font-size: 0.9em;
+      height: 18px;
+    }
+    #menu-item{
+      list-style-type: none; margin: 1px;
+      padding: 5px;
+      float: right;
+      width: 100px;
+      display:block;
+      border:1px outset ButtonShadow;
+      background-color:buttonFace;
+      text-align: right;
+    }
+    #form
+    {
+      position:relative;
+      top:50px;
+      margin: auto 0px;
+    }
+  </style>
+
+ 
+
+  <body>
+    <div id="dialog-confirm" title="Are you Sure?"">
+	      These records will be permanently voided after the update and may not be recovered. <p> <center>Are you sure you want to submit?</center></p>
+  </div>
+  <div id="body_div">
+    <div id="title_div">
+      <div style="top:100px; text-align:center; font-size: 1.5em">OpenMRS Mapping</div>
+      <div style='text-align: center; width: 100%; font-style: italic;'>
+      Automate your cross database mapping for varied OpenMRS data models
+      </div>
+    </div>
+
+    <div id="panel">
+        <div class="menu">
+           <div id="menu-item">
+             <%= link_to "Drug Mapping", {:action => 'drugs'}%>
+	       </div>
+          <div id="menu-item">
+            <%= link_to "Concept Mapping", :action => 'concepts'%>
+	       </div>
+
+        </div>
+      </div>
+  </div>
+</body>
+</html>
