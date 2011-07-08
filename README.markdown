@@ -1,5 +1,5 @@
-OpenMRS Mapping: Automate your cross database mapping for varied OpenMRS data models 
-====================================================================================
+OpenMRS Mapping:
+================
 
 Introduction
 ------------
@@ -8,6 +8,7 @@ OpenMRS Mapping is an application that that does cross-database mapping for vari
 Getting Started
 ---------------
 In order to setup the app, do the following:
+
 * Create a database:
       mysqladmin -u root -p create drug_map_development;
 
