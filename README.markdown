@@ -1,4 +1,4 @@
-OpenMRS Mapping:
+OpenMRS Mapping
 ================
 
 Introduction
